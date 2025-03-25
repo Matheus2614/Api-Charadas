@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import random
 
 app = Flask(__name__)
+CORS(app)
 
 charadas = [
     {'id': 1, 'charada': 'Qual a diferença entre o padre e o bule?', 'resposta': 'O padre é de muita fé, o bule é de por café.'},
